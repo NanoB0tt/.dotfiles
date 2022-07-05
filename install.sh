@@ -10,7 +10,9 @@ sudo pacman -S \
 	bat \
     kitty \
     feh \
-    htop
+    htop \
+    npm \
+    github-cli
 
 # add zsh to shells
 command -v zsh | sudo tee -a /etc/shells
