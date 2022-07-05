@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# +---- Create dir ----+
-mkdir plugins
-
 # +---- PLUGINS ----+
 
 git clone https://github.com/zsh-users/zsh-completions.git ~/.config/zsh/plugins/zsh-completions
