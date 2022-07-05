@@ -21,7 +21,7 @@ command -v zsh | sudo tee -a /etc/shells
 sudo chsh -s $(which zsh) $USER
 
 # install zsh plugins
-./.config/zsh/zsh_plugins
+./.config/zsh/.zsh_plugins
 
 # install packer
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# +---- Create dir ----+
+mkdir plugins
+
+# +---- PLUGINS ----+
+
+git clone https://github.com/zsh-users/zsh-completions.git ~/.config/zsh/plugins/zsh-completions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.config/zsh/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/zsh/plugins/zsh-syntax-highlighting
+
+
