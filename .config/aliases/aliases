@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# +---- zsh ----+
+alias reload-zsh='source ~/.config/zsh/.zshrc'
+
+# +---- ls ----+
+alias ls='ls --color=auto'
+
+# +---- grep ----+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# +---- nvim ----+
+alias vim='nvim'
+alias nvim='nvim'
+
+# +---- dotfiles ----+
+alias dotfilesconf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
