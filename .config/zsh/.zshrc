@@ -22,8 +22,9 @@ source $ZDOTDIR/completion
 bindkey -v
 export KEYTIMEOUT=1
 
-# +---- neofetch ----+
+# +---- things ----+
 neofetch
+eval "$(starship init zsh)"
 
 # +---- Plugins ----+
 

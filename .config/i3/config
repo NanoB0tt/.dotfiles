@@ -48,7 +48,7 @@ font pango: Noto Sans Regular 10
 set $mod Mod4
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+q kill
@@ -224,11 +224,11 @@ set $ws10 "10"
 # use workspaces on different displays:
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
 # you can get from xrandr command
-#workspace $ws1 output VGA-0
-#workspace $ws2 output VGA-0
-#workspace $ws3 output HDMI-0
-#workspace $ws4 output HDMI-0
-#workspace $ws5 output HDMI-0
+workspace $ws1 output eDP1
+workspace $ws2 output HDMI-1
+workspace $ws3 output eDP1
+workspace $ws4 output eDP1
+workspace $ws5 output eDP1
 
 # bind program to workspace and focus to them on startup:
 assign [class="Xfce4-terminal"] $ws1
@@ -267,7 +267,7 @@ for_window [class="urxvt"] border pixel 1
 
 # set size of floating window
 #for_window [window_role="(?i)GtkFileChooserDialog"] resize set 640 480 #to set size of file choose dialog
-#for_window [class=".*"] resize set 640 480 #to change size of all floating windows 
+#for_window [class=".*"] resize set 640 480 #to change size of all floating windows
 
 # set position of floating window
 #for_window [class=".*"] move position center
