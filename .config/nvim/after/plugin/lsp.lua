@@ -5,7 +5,7 @@ local inoremap = Remap.inoremap
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-local luasnip = require("luasnip")
+--local luasnip = require("luasnip")
 
 
 -- Setup nvim-cmp
@@ -132,16 +132,12 @@ local function config(_config)
 end
 
 -- Luasnip
-require("luasnip.loaders.from_vscode").lazy_load({})
+require("luasnip.loaders.from_vscode").lazy_load()
 
 -- language servers
-require'lspconfig'.cssls.setup{
-    capabilities = capabilities,
-}
-require'lspconfig'.html.setup{
-    capabilities = capabilities,
-}
-require'lspconfig'.pyright.setup{}
-require'lspconfig'.tsserver.setup{}
+require'lspconfig'.cssls.setup(config())
+require'lspconfig'.html.setup(config())
+require'lspconfig'.pyright.setup(config())
+require'lspconfig'.tsserver.setup(config())
 
 

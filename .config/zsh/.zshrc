@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 # +---------------------+
 # |    CONFIGURATION    |
@@ -23,8 +26,12 @@ bindkey -v
 export KEYTIMEOUT=1
 
 # +---- things ----+
-neofetch
-eval "$(starship init zsh)"
+#neofetch
+#eval "$(starship init zsh)"
+export LANG=en_IN.UTF-8
+
+# +--- bindings ---+
+bindkey -s ^f "~/./.local/bin/tmux-sessionizer \n"
 
 # +---- Plugins ----+
 
@@ -32,3 +39,8 @@ eval "$(starship init zsh)"
 source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Syntax highlighting
 source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# zsh prompt
+source $ZDOTDIR/plugins/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

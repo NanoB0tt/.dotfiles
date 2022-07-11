@@ -3,7 +3,7 @@
 ########################
 
 # compositor #
-exec_always --no-startup-id picom --experimental-backends --config  ~/.config/picom/picom.conf
+exec_always --no-startup-id picom  --config  ~/.config/picom/picom.conf
 
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -126,7 +126,7 @@ bindsym XF86AudioPrev exec playerctl previous
 ## App shortcuts
 bindsym $mod+w exec /usr/bin/firefox
 bindsym $mod+n exec /usr/bin/thunar
-bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
+bindsym Print exec scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/Pictures/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
 #####################
 # workspace layout: #
@@ -224,8 +224,8 @@ set $ws10 "10"
 # use workspaces on different displays:
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
 # you can get from xrandr command
-workspace $ws1 output eDP1
-workspace $ws2 output HDMI-1
+workspace $ws1 output HDMI-1
+workspace $ws2 output eDP1
 workspace $ws3 output eDP1
 workspace $ws4 output eDP1
 workspace $ws5 output eDP1

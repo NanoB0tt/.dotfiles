@@ -22,6 +22,11 @@ return require('packer').startup(function()
     use("nvim-lua/lsp_extensions.nvim")
     use("windwp/nvim-autopairs")
     use("windwp/nvim-ts-autotag")
+    use("glepnir/lspsaga.nvim")
+    use("rafamadriz/friendly-snippets")
+
+    -- vim plugins
+    use("tpope/vim-surround")
 
     --Theme
     use ('folke/tokyonight.nvim')
