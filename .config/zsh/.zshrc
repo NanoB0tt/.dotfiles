@@ -28,7 +28,7 @@ export KEYTIMEOUT=1
 # +---- things ----+
 #neofetch
 #eval "$(starship init zsh)"
-export LANG=en_IN.UTF-8
+export LANG=es_AR.UTF-8
 
 # +--- bindings ---+
 bindkey -s ^f "~/./.local/bin/tmux-sessionizer \n"

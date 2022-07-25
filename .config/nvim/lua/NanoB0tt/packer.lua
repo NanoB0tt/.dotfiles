@@ -10,11 +10,14 @@ return require('packer').startup(function()
     use {'TimUntersberger/neogit',
         requires = 'nvim-lua/plenary.nvim'
     }
+    use("kyazdani42/nvim-web-devicons")
+    use("lewis6991/gitsigns.nvim")
 
     -- LSP plugins
     use("neovim/nvim-lspconfig")
     use("hrsh7th/cmp-nvim-lsp")
     use("hrsh7th/cmp-buffer")
+    use("hrsh7th/cmp-path")
     use("hrsh7th/nvim-cmp")
     use("onsails/lspkind-nvim")
     use("L3MON4D3/LuaSnip")
@@ -22,8 +25,8 @@ return require('packer').startup(function()
     use("nvim-lua/lsp_extensions.nvim")
     use("windwp/nvim-autopairs")
     use("windwp/nvim-ts-autotag")
-    use("glepnir/lspsaga.nvim")
     use("rafamadriz/friendly-snippets")
+    use("nvim-lua/popup.nvim")
 
     -- vim plugins
     use("tpope/vim-surround")

@@ -5,7 +5,7 @@ local inoremap = Remap.inoremap
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
---local luasnip = require("luasnip")
+local luasnip = require("luasnip")
 
 
 -- Setup nvim-cmp

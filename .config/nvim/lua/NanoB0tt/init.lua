@@ -3,6 +3,7 @@ NanoB0ttGroup = augroup('NanoB0tt', {})
 
 require("NanoB0tt.packer")
 require("NanoB0tt.set")
+require("gitsigns").setup()
 
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlighYank', {})
@@ -27,7 +28,7 @@ autocmd({"BufEnter", "BufWinEnter", "TabEnter"}, {
 })
 
 autocmd({"BufWritePre"}, {
-    group = ThePrimeagenGroup,
+    group = NanoB0ttGroup,
     pattern = "*",
     command = "%s/\\s\\+$//e",
 })
