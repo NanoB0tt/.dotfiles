@@ -29,6 +29,10 @@ vim.opt.scrolloff = 10
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
+-- Changing the default for splits
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
 -- Give more space for displaying messages.
 vim.opt.cmdheight = 1
 

@@ -12,6 +12,8 @@ return require('packer').startup(function()
     }
     use("kyazdani42/nvim-web-devicons")
     use("lewis6991/gitsigns.nvim")
+    use("JoosepAlviste/nvim-ts-context-commentstring")
+    use("numToStr/Comment.nvim")
 
     -- LSP plugins
     use("neovim/nvim-lspconfig")
