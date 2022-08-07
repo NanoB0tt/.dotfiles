@@ -32,3 +32,12 @@ autocmd({"BufWritePre"}, {
     pattern = "*",
     command = "%s/\\s\\+$//e",
 })
+
+autocmd({"BufWritePre"}, {
+    group = NanoB0ttGroup,
+    pattern = "*",
+    callback = function()
+        vim.lsp.buf.formatting_sync()
+    end,
+})
+
