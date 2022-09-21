@@ -12,7 +12,10 @@ sudo pacman -S \
     feh \
     htop \
     npm \
-    github-cli
+    github-cli \
+    telegram-desktop \
+    brightnessctl \
+    xclip
 
 # add zsh to shells
 command -v zsh | sudo tee -a /etc/shells
