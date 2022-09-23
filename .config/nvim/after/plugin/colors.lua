@@ -10,7 +10,7 @@ function BackgroundSettings()
         bg = "none",
     })
 
-    vim.api.nvim_set_hl(0, "CursorLineNr", {
+    vim.api.nvim_set_hl(0, "CursorLineNR", {
         bg = "none",
     })
 

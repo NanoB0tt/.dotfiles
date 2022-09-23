@@ -7,7 +7,6 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local luasnip = require("luasnip")
 
-
 -- Setup nvim-cmp
 local cmp = require("cmp")
 local source_mapping = {
@@ -139,5 +138,4 @@ require'lspconfig'.cssls.setup(config())
 require'lspconfig'.html.setup(config())
 require'lspconfig'.pyright.setup(config())
 require'lspconfig'.tsserver.setup(config())
-
-
+require'lspconfig'.tailwindcss.setup(config())
