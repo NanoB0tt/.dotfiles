@@ -48,7 +48,7 @@ font pango: Noto Sans Regular 10
 set $mod Mod4
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+q kill
@@ -179,29 +179,29 @@ bindsym $mod+Shift+0    move container to workspace  $ws10
 
 
 # resize window (you can also use the mouse for that):
-#mode "resize" {
-# These bindings trigger as soon as you enter the resize mode
-# Pressing left will shrink the window's width.
-# Pressing right will grow the window's width.
-# Pressing up will shrink the window's height.
-# Pressing down will grow the window's height.
-#        bindsym j resize shrink width 10 px or 10 ppt
-#        bindsym k resize grow height 10 px or 10 ppt
-#        bindsym l resize shrink height 10 px or 10 ppt
-#        bindsym ntilde resize grow width 10 px or 10 ppt
+mode "resize" {
+ # These bindings trigger as soon as you enter the resize mode
+ # Pressing left will shrink the window's width.
+ # Pressing right will grow the window's width.
+ # Pressing up will shrink the window's height.
+ # Pressing down will grow the window's height.
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
-# same bindings, but for the arrow keys
-#	bindsym Left resize shrink width 10 px or 10 ppt
-#        bindsym Down resize grow height 10 px or 10 ppt
-#        bindsym Up resize shrink height 10 px or 10 ppt
-#        bindsym Right resize grow width 10 px or 10 ppt
+ # same bindings, but for the arrow keys
+	bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
 
-# back to normal: Enter or Escape
-#	bindsym Return mode "default"
-#        bindsym Escape mode "default"
-#}
+ # rack to normal: Enter or Escape
+	bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
 
-#bindsym $mod+r mode "resize"
+bindsym $mod+r mode "resize"
 
 
 ##########################################
@@ -210,8 +210,8 @@ bindsym $mod+Shift+0    move container to workspace  $ws10
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:"
-set $ws2 "2:"
+set $ws1 "1:"
+set $ws2 "2:"
 set $ws3 "3:"
 set $ws4 "4:"
 set $ws5 "5:"
@@ -231,13 +231,13 @@ workspace $ws4 output eDP1
 workspace $ws5 output eDP1
 
 # bind program to workspace and focus to them on startup:
-assign [class="Xfce4-terminal"] $ws1
-assign [class="(?i)firefox"] $ws2
+assign [class="kitty"] $ws2
+assign [class="(?i)firefox"] $ws1
 assign [class="Thunar"] $ws3
 assign [class="TelegramDesktop"] $ws5
 
 # automatic set focus new window if it opens on another workspace then the current:
-for_window [class=Xfce4-terminal] focus
+for_window [class=kitty] focus
 for_window [class=(?i)firefox] focus
 for_window [class=Thunar] focus
 for_window [class=TelegramDesktop] focus
