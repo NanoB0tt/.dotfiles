@@ -233,6 +233,7 @@ workspace $ws5 output eDP1
 # bind program to workspace and focus to them on startup:
 assign [class="kitty"] $ws2
 assign [class="(?i)firefox"] $ws1
+assign [class="Google-chrome"] $ws1
 assign [class="Thunar"] $ws3
 assign [class="TelegramDesktop"] $ws5
 
@@ -243,6 +244,14 @@ for_window [class=Thunar] focus
 for_window [class=TelegramDesktop] focus
 
 for_window [class="Spotify"] move to workspace $ws4
+
+##################
+# tabbed rules   #
+##################
+
+# set tabbed
+for_window [class=(?i)firefox] layout tabbed
+
 ##################
 # floating rules #
 ##################

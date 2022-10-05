@@ -30,9 +30,6 @@ return require('packer').startup(function()
     use("rafamadriz/friendly-snippets")
     use("nvim-lua/popup.nvim")
 
-    -- vim plugins
-    use("tpope/vim-surround")
-
     --Theme
     use ('folke/tokyonight.nvim')
 
