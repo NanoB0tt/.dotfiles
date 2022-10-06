@@ -8,14 +8,15 @@ sudo pacman -S \
 	fzf \
 	ripgrep \
 	bat \
-    kitty \
-    feh \
-    htop \
-    npm \
-    github-cli \
-    telegram-desktop \
-    brightnessctl \
-    xclip
+  kitty \
+  feh \
+  htop \
+  npm \
+  github-cli \
+  telegram-desktop \
+  brightnessctl \
+  xclip \
+  git-delta
 
 # add zsh to shells
 command -v zsh | sudo tee -a /etc/shells

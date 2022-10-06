@@ -3,7 +3,7 @@
 ########################
 
 # compositor #
-exec_always --no-startup-id picom  --config  ~/.config/picom/picom.conf
+exec_always --no-startup-id picom --experimental-backends  --config  ~/.config/picom/picom.conf
 
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
