@@ -1,8 +1,18 @@
 {
   "compilerOptions": {
-      "module": "commonjs",
-      "target": "es6",
-      "checkJs": false
-    },
-      "exclude": ["node_modules"]
+    "module": "commonjs",
+    "target": "es6",
+    "checkJs": false
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.0"
+  }
 }

@@ -264,6 +264,7 @@ for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 # set floating (nontiling) for special apps
 for_window [class="Xsane" instance="xsane"] floating enable
 for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
+for_window [class="kitty" instance="kitty"] floating enable
 for_window [class="qt5ct" instance="qt5ct"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
@@ -279,6 +280,9 @@ for_window [class="urxvt"] border pixel 1
 
 # set position of floating window
 #for_window [class=".*"] move position center
+
+# set no borders of windows
+for_window [class="^.*"] border pixel 1
 
 ######################################
 # color settings for bar and windows #
@@ -313,7 +317,7 @@ client.urgent		    $urgentred	$urgentred	$white		$purple		$yellowbrown
 bar {
 		font pango: Noto Sans Regular 10
 		status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	    	position bottom
+	    	position top
 #	    	i3bar_command i3bar --transparency
 # it could be that you have no primary display set: set one (xrandr --output <output> --primary)
 # reference: https://i3wm.org/docs/userguide.html#_tray_output

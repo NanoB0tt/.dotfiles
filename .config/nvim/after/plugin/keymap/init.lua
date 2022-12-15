@@ -32,3 +32,8 @@ vnoremap("<leader>d", "\"_d")
 -- Rename all ocurrences under cursor
 nnoremap("<leader>r", ":%s/<c-r><c-w>/<c-r><c-w>/g<c-f>$F/i")
 
+-- Move and center the screen
+nnoremap("<C-u>", "<C-u>zz")
+nnoremap("<C-d>", "<C-d>zz")
+nnoremap("n", "nzz")
+
