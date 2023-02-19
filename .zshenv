@@ -21,4 +21,6 @@ export HISTFILE="$ZDOTDIR/.zhistory"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
+# Docker
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 
